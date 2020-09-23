@@ -1,0 +1,4 @@
+Create a Bookmark manager for firefox.
+Add function make a local backup.
+Add function to upload to cloud.
+Add function to remove old file in cloud and add a new one.
