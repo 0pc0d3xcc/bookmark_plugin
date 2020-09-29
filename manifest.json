@@ -1,0 +1,43 @@
+{
+
+"manifest_version" : 2,
+"version" : "0.1",
+"version_name": "0.1 beta",
+"name" : "Bookmark Manager+",
+"short_name": "BM+",
+"description": "Manages bookmarks in firefox. Uploads/backup bookmarks to google drive.",
+"author": "0pc0d3",
+"homepage_url": "https://www.google.com",
+
+"icons": {
+  "48": "icon.png",
+  "96": "icon.png"
+},
+
+"background": {
+  "scripts": ["background.js"]
+},
+
+"permissions": ["tabs"],
+"incognito": "spanning",
+
+"browser_action": {
+  "browser_style": true,
+  "default_icon": {
+    "16": "icon.png",
+    "32": "icon.png"
+  },
+  "default_title": "BM+",
+  "default_popup": "popup/index.html",
+  "theme_icons": [{
+    "light": "icon.png",
+    "dark": "icon.png",
+    "size": 16
+  }, {
+    "light": "icon.png",
+    "dark": "icon.png",
+    "size": 32
+  }]
+}
+
+}
