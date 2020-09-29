@@ -3,12 +3,53 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css"/>
+<!--    <link rel="stylesheet" href="style.css"/> -->
+	<style>
+	  .title {
+	  background-color: DodgerBlue; /* Blue */
+	  color: black
+	  }
+	  
+	  * {
+	    background-color: lightblue;
+	    }
+
+	  .button {
+  	  border: none;
+  	  color: white;
+  	  padding: 15px 32px;
+  	  text-align: center;
+  	  text-decoration: none;
+  	  display: inline-block;
+  	  font-size: 16px;
+  	  margin: 4px 2px;
+  	  cursor: pointer;
+	  }
+
+	 .button1 {background-color: #4CAF50;} /* Green */
+	 .button2 {background-color: #008CBA;} /* Blue */
+
+	 .button1:hover {
+  	 background-color: #008CBA;
+  	 color: white;
+  	 border-style: groove;
+  	 border-color: DarkCyan;
+	 }
+
+	 .button2:hover {
+  	 background-color: #4CAF50;
+  	 color: white;
+  	 border-style: groove;
+  	 border-color: DarkCyan;
+	 }
+   </style>
+   <script type="text/javascript" src="./../background.js"></script>
   </head>
 
-<body>
- <h1> BM+ </h1>
- <button type="button" name="export_html" id="12345">Export Bookmarks in HTML</button>
-</body>
+  <body>
+    <h1 align="center" class="title"> BM+ </h1>
+    <button type="button" name="export_html" id="12345" class="button button1" >Export Bookmarks in HTML</button>
+    <button type="button" name="export_json" id="54321" class="button button2" onclick=alert("hi")>Export Bookmarks in JSON</button>
+  </body>
 
 </html>
